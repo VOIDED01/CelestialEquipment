@@ -1,10 +1,21 @@
 {
   "item.celestial_equipment.celestium_ingot": "Celestium Ingot",
   "item.celestial_equipment.raw_celestium": "Raw Celestium",
+  "item.celestial_equipment.celestial_coal": "Celestial Coal",
+  "item.celestial_equipment.celestium_rod": "Celestium Rod",
+  "item.celestial_equipment.celestial_upgrade_smithing_template": "Celestial Smithing Upgrade",
+
+
+  "item.celestial_equipment.celestial_sword": "Celestial Sword",
+  "item.celestial_equipment.celestial_pickaxe": "Celestial Pickaxe",
+  "item.celestial_equipment.celestial_hoe": "Celestial Hoe",
+  "item.celestial_equipment.celestial_shovel": "Celestial Shovel",
+  "item.celestial_equipment.celestial_axe": "Celestial Axe",
 
   "block.celestial_equipment.celestium_block": "Block Of Celestium",
   "block.celestial_equipment.raw_celestium_block": "Block Of Raw Celestium",
   "block.celestial_equipment.deepslate_celestium_ore": "Deepslate Celestium Ore",
+  "block.celestial_equipment.celestial_gravel": "Suspicious Gravel",
 
   "creativetab.celestial_tab": "Celestial Equipment"
 }

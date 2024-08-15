@@ -39,6 +39,8 @@ public class ModBlocks {
                     .lightLevel((state) -> 15), // V
                     UniformInt.of(6, 9))); // VOIDED
 
+    public static final RegistryObject<Block> CELESTIAL_GRAVEL = registerBlock("celestial_gravel",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) { // VOID
         RegistryObject<T> toReturn = BLOCKS.register(name, block); // V

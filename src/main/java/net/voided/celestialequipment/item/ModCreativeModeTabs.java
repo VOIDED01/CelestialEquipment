@@ -21,9 +21,19 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.CELESTIUM_INGOT.get());
                         pOutput.accept(ModItems.RAW_CELESTIUM.get());
+                        pOutput.accept(ModItems.CELESTIUM_ROD.get());
+                        pOutput.accept(ModItems.CELESTIAL_COAL.get());
+                        pOutput.accept(ModItems.CELESTIAL_SWORD.get());
+                        pOutput.accept(ModItems.CELESTIAL_PICKAXE.get());
+                        pOutput.accept(ModItems.CELESTIAL_AXE.get());
+                        pOutput.accept(ModItems.CELESTIAL_SHOVEL.get());
+                        pOutput.accept(ModItems.CELESTIAL_HOE.get());
+                        pOutput.accept(ModItems.CELESTIAL_UPGRADE_TEMPLATE.get());
+
                         pOutput.accept(ModBlocks.CELESTIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_CELESTIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_CELESTIUM_ORE.get());
+                        pOutput.accept(ModBlocks.CELESTIAL_GRAVEL.get());
                     })
                     .build());
 
