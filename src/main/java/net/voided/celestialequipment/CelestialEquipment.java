@@ -1,5 +1,6 @@
 package net.voided.celestialequipment;
 
+// VOIDED
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -20,41 +21,37 @@ import net.voided.celestialequipment.item.ModCreativeModeTabs;
 import net.voided.celestialequipment.item.ModItems;
 import org.slf4j.Logger;
 
-
 @Mod(CelestialEquipment.MOD_ID)
-public class CelestialEquipment
-{
+public class CelestialEquipment {
 
+    // VOIDED
     public static final String MOD_ID = "celestial_equipment";
 
+    // VOID
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CelestialEquipment() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
+        // V
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
-
+        // NOTHINGNESS
         ModCreativeModeTabs.register(modEventBus);
 
-
         modEventBus.addListener(this::commonSetup);
-
-
         modEventBus.addListener(this::addCreative);
-
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        // V
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CELESTIUM_INGOT);
             event.accept(ModItems.RAW_CELESTIUM);
         }

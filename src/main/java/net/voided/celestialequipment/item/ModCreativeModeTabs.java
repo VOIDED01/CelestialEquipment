@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_CELESTIUM.get());
                         pOutput.accept(ModBlocks.CELESTIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_CELESTIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_CELESTIUM_ORE.get());
                     })
                     .build());
 
