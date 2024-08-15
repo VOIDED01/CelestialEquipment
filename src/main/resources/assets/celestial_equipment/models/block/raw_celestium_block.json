@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "celestial_equipment:block/raw_celestium_block"
+  }
+}

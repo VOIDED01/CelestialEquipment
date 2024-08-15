@@ -1,0 +1,9 @@
+{
+  "item.celestial_equipment.celestium_ingot": "Celestium Ingot",
+  "item.celestial_equipment.raw_celestium": "Raw Celestium",
+
+  "block.celestial_equipment.celestium_block": "Block Of Celestium",
+  "block.celestial_equipment.raw_celestium_block": "Block Of Raw Celestium",
+
+  "creativetab.celestial_tab": "Celestial Equipment"
+}
