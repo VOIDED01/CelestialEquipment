@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier CELESTIAL = TierSortingRegistry.registerTier(
-            new ForgeTier(6, 3261, 1f, 1f, 30,
+            new ForgeTier(6, 3261, 10f, 5f, 30,
                     ModTags.Blocks.NEEDS_CELESTIAL_TOOL, () -> Ingredient.of(ModItems.CELESTIUM_INGOT.get())),
             new ResourceLocation(CelestialEquipment.MOD_ID, "celestium_ingot"), List.of(Tiers.NETHERITE), List.of());
 }

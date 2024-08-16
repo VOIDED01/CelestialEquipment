@@ -24,17 +24,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CELESTIUM_BLOCK = registerBlock("celestium_block", // VOID
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK) // VOIDED
-                    .strength(30.0F, 60.0F) // VOID
+                    .strength(4.0F, 60.0F) // VOID
                     .requiresCorrectToolForDrops())); // V
 
     public static final RegistryObject<Block> RAW_CELESTIUM_BLOCK = registerBlock("raw_celestium_block", // VOIDED
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK) // VOID
-                    .strength(30.0F, 60.0F) // V
+                    .strength(4.0F, 60.0F) // V
                     .requiresCorrectToolForDrops())); // VOIDED
 
     public static final RegistryObject<Block> DEEPSLATE_CELESTIUM_ORE = registerBlock("deepslate_celestium_ore", // VOID
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE) // V
-                    .strength(30.0F, 60.0F) // VOIDED
+                    .strength(4.0F, 60.0F) // VOIDED
                     .requiresCorrectToolForDrops() // VOID
                     .lightLevel((state) -> 15), // V
                     UniformInt.of(6, 9))); // VOIDED

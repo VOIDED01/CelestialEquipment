@@ -30,6 +30,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CELESTIAL_HOE.get());
                         pOutput.accept(ModItems.CELESTIAL_UPGRADE_TEMPLATE.get());
 
+                        pOutput.accept(ModItems.CELESTIAL_HELMET.get());
+                        pOutput.accept(ModItems.CELESTIAL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.CELESTIAL_LEGGINGS.get());
+                        pOutput.accept(ModItems.CELESTIAL_BOOTS.get());
+
+
                         pOutput.accept(ModBlocks.CELESTIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_CELESTIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_CELESTIUM_ORE.get());
