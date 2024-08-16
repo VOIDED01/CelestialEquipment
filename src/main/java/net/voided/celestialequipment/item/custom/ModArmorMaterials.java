@@ -11,8 +11,8 @@ import net.voided.celestialequipment.item.ModItems;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    CELESTIAL("celestial", 26, new int[]{5, 7, 5, 4}, 30,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 1.5f, 0.8F, () -> Ingredient.of(ModItems.CELESTIUM_INGOT.get()));
+    CELESTIAL("celestial", 30, new int[]{8, 15, 13, 6}, 30,
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.1F, () -> Ingredient.of(ModItems.CELESTIUM_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;
@@ -23,7 +23,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private static final int[] BASE_DURABILITY = {11, 16, 16, 13};
+    private static final int[] BASE_DURABILITY = {20, 32, 25, 10};
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;

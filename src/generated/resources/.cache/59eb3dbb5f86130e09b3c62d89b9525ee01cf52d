@@ -1,0 +1,5 @@
+// 1.20.1	2024-08-15T20:43:44.2520989	Loot Tables
+7c762b3b0de7e5ea0156acecc88c7a2b8aeda116 data/celestial_equipment/loot_tables/blocks/celestial_gravel.json
+16a8fe592b91d0b61f2f3cc2ba537c2c28d995ff data/celestial_equipment/loot_tables/blocks/celestium_block.json
+525aeae42ab2b9b6551074917e231905d91fbd73 data/celestial_equipment/loot_tables/blocks/deepslate_celestium_ore.json
+26a7a044ac3599256344e430d2a262a6d7996dda data/celestial_equipment/loot_tables/blocks/raw_celestium_block.json

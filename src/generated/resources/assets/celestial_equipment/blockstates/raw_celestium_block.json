@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "celestial_equipment:block/raw_celestium_block"
+    }
+  }
+}

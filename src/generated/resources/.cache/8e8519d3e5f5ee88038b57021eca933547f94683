@@ -1,0 +1,5 @@
+// 1.20.1	2024-08-15T21:42:07.5234437	Tags for minecraft:block mod id celestial_equipment
+ea4c31d77b2b0239307982eca651e6e783aeac7f data/forge/tags/blocks/needs_netherite_tool.json
+a9480ffeeea4be21ed0c8741a1c72e42cc486168 data/minecraft/tags/blocks/mineable/pickaxe.json
+dfc9a5ac98d63371eab757a7659adf90c6fa5d50 data/minecraft/tags/blocks/mineable/shovel.json
+dfc9a5ac98d63371eab757a7659adf90c6fa5d50 data/minecraft/tags/blocks/needs_diamond_tool.json

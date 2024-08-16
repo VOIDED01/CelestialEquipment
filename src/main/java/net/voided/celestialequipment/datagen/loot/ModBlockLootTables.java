@@ -4,24 +4,24 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.voided.celestialequipment.block.ModBlocks;
 import net.voided.celestialequipment.item.ModItems;
+import net.voided.util.ModTags;
 
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
-    public ModBlockLootTables(Set<Item> pExplosionResistant, FeatureFlagSet pEnabledFeatures) {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
-    }
-
     public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
-
     }
 
     @Override
@@ -30,20 +30,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_CELESTIUM_BLOCK.get());
 
         this.add(ModBlocks.DEEPSLATE_CELESTIUM_ORE.get(),
-                block -> createOreDrop(ModItems.RAW_CELESTIUM.get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_CELESTIUM_ORE.get(), ModItems.RAW_CELESTIUM.get()));
+
+
         this.add(ModBlocks.CELESTIAL_GRAVEL.get(),
-                block -> createOreDrop(ModItems.CELESTIAL_COAL.get()));
+               block -> createCopperLikeOreDrops(ModBlocks.CELESTIAL_GRAVEL.get(), ModItems.CELESTIAL_COAL.get()));
+    }
+
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                 this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator
+                                        .between(2.0F, 5.0F)))
+                                            .apply(ApplyBonusCount
+                                                .addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
-
-    private LootTable.Builder createOreDrop(Item dropItem) {
-        return LootTable.lootTable()
-                .withPool(LootPool.lootPool()
-                        .add(LootItem.lootTableItem(dropItem)));
-    }
-
 }

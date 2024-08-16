@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 10.0,
+  "group": "celestium",
+  "ingredient": {
+    "item": "celestial_equipment:deepslate_celestium_ore"
+  },
+  "result": "celestial_equipment:celestium_ingot"
+}
