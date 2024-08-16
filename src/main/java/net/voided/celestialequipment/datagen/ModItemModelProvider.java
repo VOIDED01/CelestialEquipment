@@ -79,7 +79,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_CELESTIUM);
         simpleItem(ModItems.CELESTIAL_COAL);
         simpleItem(ModItems.CELESTIUM_ROD);
-        simpleItem(ModItems.CELESTIAL_UPGRADE_TEMPLATE);
 
         handHeldItem(ModItems.CELESTIAL_SWORD);
         handHeldItem(ModItems.CELESTIAL_PICKAXE);

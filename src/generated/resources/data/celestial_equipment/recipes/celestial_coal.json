@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:coal"
+    },
+    "g": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "pattern": [
+    "gcg",
+    "cgc",
+    "gcg"
+  ],
+  "result": {
+    "item": "celestial_equipment:celestial_coal"
+  },
+  "show_notification": true
+}

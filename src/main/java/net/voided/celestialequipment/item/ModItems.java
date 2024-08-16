@@ -13,7 +13,6 @@ public class ModItems {
     // Deferred Register for Items
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CelestialEquipment.MOD_ID);
-
     // Item Definitions
     public static final RegistryObject<Item> CELESTIUM_ROD = ITEMS.register("celestium_rod",
             () -> new Item(new Item.Properties()));
@@ -21,7 +20,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CELESTIUM = ITEMS.register("raw_celestium",
             () -> new Item(new Item.Properties()));
-
     // Tool Definitions with Custom Attack Speeds
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
             () -> new SwordItem(ModToolTiers.CELESTIAL, 4, -1F, new Item.Properties()));
@@ -33,7 +31,6 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.CELESTIAL, -5, -3F, new Item.Properties()));
     public static final RegistryObject<Item> CELESTIAL_HOE = ITEMS.register("celestial_hoe",
             () -> new HoeItem(ModToolTiers.CELESTIAL, -5,  9F, new Item.Properties()));
-
     // Modded Armor
     public static final RegistryObject<Item> CELESTIAL_HELMET = ITEMS.register("celestial_helmet",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -43,15 +40,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> CELESTIAL_BOOTS = ITEMS.register("celestial_boots",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
-
     // Fuel Item Definition
     public static final RegistryObject<Item> CELESTIAL_COAL = ITEMS.register("celestial_coal",
             () -> new FuelItem(new Item.Properties(), 3200));
-
-    // Celestial Upgrade Smithing Template
-    public static final RegistryObject<Item> CELESTIAL_UPGRADE_TEMPLATE = ITEMS.register("celestial_upgrade_smithing_template",
-            () -> new Item(new Item.Properties()));
-
     // Register Items
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

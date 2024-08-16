@@ -28,7 +28,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CELESTIAL_AXE.get());
                         pOutput.accept(ModItems.CELESTIAL_SHOVEL.get());
                         pOutput.accept(ModItems.CELESTIAL_HOE.get());
-                        pOutput.accept(ModItems.CELESTIAL_UPGRADE_TEMPLATE.get());
 
                         pOutput.accept(ModItems.CELESTIAL_HELMET.get());
                         pOutput.accept(ModItems.CELESTIAL_CHESTPLATE.get());

@@ -6,12 +6,12 @@
       "item": "celestial_equipment:celestium_ingot"
     },
     "/": {
-      "item": "minecraft:stick"
+      "item": "celestial_equipment:celestium_rod"
     }
   },
   "pattern": [
     "## ",
-    "## ",
+    "#/ ",
     " / "
   ],
   "result": {
