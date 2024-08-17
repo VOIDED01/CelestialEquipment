@@ -14,6 +14,8 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CelestialEquipment.MOD_ID);
 
+    //Hello
+
     public static final RegistryObject<CreativeModeTab> CELESTIAL_TAB = CREATIVE_MODE_TABS.register("celestial_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.CELESTIUM_INGOT.get()))
